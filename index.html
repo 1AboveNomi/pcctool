@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name/Email Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <img src="logo.webp" alt="Logo" class="logo">
+
+        <!-- Email Input -->
+        <textarea id="emailInput" placeholder="Paste email content here"></textarea>
+
+        <!-- Region Buttons (Moved above the Copy Email button) -->
+        <div class="region-buttons">
+            <button class="regionBtn" data-region-prefix="oasis.">Texas</button>
+            <button class="regionBtn" data-region-prefix="canm.">New Mexico</button>
+            <button class="regionBtn" data-region-prefix="kcmo.">Missouri</button>
+        </div>
+
+        <!-- Generated Email Output and Copy Button -->
+        <textarea id="emailOutput" readonly placeholder="Generated email will appear here"></textarea>
+        <button class="copyBtn" data-copy-target="emailOutput">Copy Generated Email</button>
+
+        <!-- Name Fields -->
+        <div>
+            <label for="nameInput">Full Name: </label>
+            <input type="text" id="nameInput" readonly>
+            <button class="copyBtn" data-copy-target="nameInput">Copy</button>
+        </div>
+        <div>
+            <label for="initialsField">Initials: </label>
+            <input type="text" id="initialsField" readonly>
+            <button class="copyBtn" data-copy-target="initialsField">Copy</button>
+        </div>
+        <div>
+            <label for="loginField">Login: </label>
+            <input type="text" id="loginField" readonly>
+            <button class="copyBtn" data-copy-target="loginField">Copy</button>
+        </div>
+        <div>
+            <label for="firstNameField">First Name: </label>
+            <input type="text" id="firstNameField" readonly>
+            <button class="copyBtn" data-copy-target="firstNameField">Copy</button>
+        </div>
+        <div>
+            <label for="lastNameField">Last Name: </label>
+            <input type="text" id="lastNameField" readonly>
+            <button class="copyBtn" data-copy-target="lastNameField">Copy</button>
+        </div>
+
+        <!-- Password Field -->
+        <div>
+            <label for="passwordField">Password: </label>
+            <input type="text" id="passwordField" readonly>
+            <button class="copyBtn" data-copy-target="passwordField">Copy</button>
+        </div>
+
+        <!-- Dark Mode Switch -->
+        <div class="mode-switch">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
